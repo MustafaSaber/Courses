@@ -21,13 +21,28 @@ p = zeros(size(X, 1), 1);
 %       can use max(A, [], 2) to obtain the max for each row.
 %
 
+% was trying to put thetas in array and iterate on them despite the number of them
+%thetas = {Theta1 , Theta2};
+%layer_numbers = length(thetas);
+%a0 = [ones(m, 1) X];
+%temp = a0;
+%for i =1:layer_numbers,
+%  if i ~= layer_numbers
+%    temp = [ones(m,1) sigmoid(temp * thetas(i)')];
+%  else
+%    temp = sigmoid(temp * thetas(i)');
+%  endif
+%endfor
 
+% since they are only 2 will make it simple
 
+a0 = [ones(m, 1) X];
+a1 = [ones(m,1) sigmoid(a0 * Theta1')];
+a2 = sigmoid(a1 * Theta2');
 
+[values , idxs] = max(a2 , [] , 2);
 
-
-
-
+p = idxs;
 
 % =========================================================================
 
