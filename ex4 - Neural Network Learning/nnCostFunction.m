@@ -63,24 +63,54 @@ Theta2_grad = zeros(size(Theta2));
 %
 
 
+%a1 = sigmoid([ones(m, 1) X] * Theta1');
+%a2 = sigmoid([ones(m , 1) a1] * Theta2');
+
+I = eye(num_labels);
+Y = zeros(m , num_labels);
+for i = 1:m,
+  Y(i,:) = I(y(i), :);
+endfor
+
+a1 = [ones(m,1) X];
+a2 = sigmoid(a1*Theta1');
+a2 = [ones(m,1) a2];	
+a3 = sigmoid(a2*Theta2');
+
+for k = 1:num_labels,
+  vec_Y = ( y == k );
+  Col_Output = a3(:,k);
+  J = J + -1/m * ((vec_Y' * log(Col_Output)) + ((1-vec_Y)' * log(1-Col_Output)));
+endfor
+
+% J isn't regularied yet
+theta1 = Theta1(:, 2:end);
+theta2 = Theta2(: , 2:end);
+All = [theta1(:) ; theta2(:)];
+J = J + ( (lambda / (2*m)) * (All' * All));
+
+change1 = zeros(size(Theta1));
+change2 = zeros(size(Theta2));
+% Another Solution
+%for i = 1:m,
+%  a1_temp = a1(i,:);
+%  a2_temp = a2(i,:);
+%  a3_temp = a3(i,:);
+%  vec_Y = Y(i:0);
+%  delta2 = a3_temp - vec_Y;
+%  delta1 = (delta2 * Theta2) .* sigmoidGradient([ones(m, 1) a1_temp * Theta1]);
+%  change1 = change1 + delta1(2:end , :)' * a1_temp;
+%  change2 = change2 + delta2' * a2_temp;
+%endfor
+
+delta2 = a3 - Y;
+delta1 = (delta2*Theta2) .* sigmoidGradient([ones(m , 1) a1 * Theta1']);
+
+%Gradient not regularied
+Theta1_grad = 1/m .* (delta1(:,2:end)' * a1) +  lambda/m * [zeros(size(Theta1 , 1) , 1) Theta1(:,2:end)];
+Theta2_grad = 1/m .* (delta2' * a2 ) + lambda/m * [zeros(size(Theta2 , 1) , 1) Theta2(:,2:end)];
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-% -------------------------------------------------------------
 
 % =========================================================================
 
