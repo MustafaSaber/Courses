@@ -19,13 +19,13 @@ grad = zeros(size(theta));
 %               You should set J to the cost and grad to the gradient.
 %
 
+temptheta = [0 ; theta(2:size(theta))];
+hypothesis = X*theta;
+ErrorSquared = (hypothesis - y).^2;
+Error = hypothesis - y;
+J = 1/(2*m) * sum(ErrorSquared) +  (lambda/(2*m))*(temptheta' * temptheta);
 
-
-
-
-
-
-
+grad = (1/m) * ( X' * Error) + (lambda/m)*temptheta;
 
 
 
