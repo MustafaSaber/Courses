@@ -16,8 +16,9 @@ centroids = zeros(K, size(X, 2));
 
 
 
-
-
+for i = 1:K
+  centroids(i,:) = X( randi([1:size(X,1)]) , :);
+endfor
 
 
 % =============================================================

@@ -19,9 +19,16 @@ X_rec = zeros(size(Z, 1), size(U, 1));
 %                    recovered_j = v' * U(j, 1:K)';
 %
 %               Notice that U(j, 1:K) is a row vector.
-%               
+% 
 
-
+%The for loop works fine
+%Ureduce = U(: , 1:K); % k columns
+%for i = 1:size(Z, 1),
+%  X_rec(i,:) = Z(i, :) * Ureduce' ;  
+%endfor
+              
+% Vectorized form
+X_rec = Z * U(:, 1:K)';
 
 % =============================================================
 

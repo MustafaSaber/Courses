@@ -23,8 +23,16 @@ idx = zeros(size(X,1), 1);
 
 
 
-
-
+for i = 1:size(X,1),
+  minDiff = inf;
+  for j = 1:K,
+    currDiff = sum((X(i,:) - centroids(j,:)).^2);
+    if currDiff < minDiff
+      minDiff = currDiff;
+      idx(i) = j;
+    endif
+  endfor
+endfor
 
 
 % =============================================================

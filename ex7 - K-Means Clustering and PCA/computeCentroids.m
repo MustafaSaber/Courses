@@ -26,8 +26,14 @@ centroids = zeros(K, n);
 % Note: You can use a for-loop over the centroids to compute this.
 %
 
-
-
+for i = 1:K,
+  CurrentIdxs = find(idx == i); %Array of indexs
+  m = size(X(CurrentIdxs),1);
+  if m == 0
+    continue;
+  endif
+  centroids(i,:) = (1/m) * sum(X(CurrentIdxs,:));
+endfor
 
 
 
