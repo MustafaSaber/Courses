@@ -189,7 +189,7 @@ close all; close all; clc
 
 % Reload the image from the previous exercise and run K-Means on it
 % For this to work, you need to complete the K-Means assignment first
-A = double(imread('C:\Users\Mostafa\Desktop\Programming courses and Assigments\Machine-Learning\ex7 - K-Means Clustering and PCA\bird_small.png'));
+A = double(imread('bird_small.png'));
 
 % If imread does not work for you, you can try instead
 %   load ('bird_small.mat');
