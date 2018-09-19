@@ -106,7 +106,6 @@ pause;
 fprintf('\nRunning K-Means clustering on pixels from an image.\n\n');
 
 %  Load an image of a bird
-% C:\Users\Mostafa\Desktop\Programming courses and Assigments\Machine-Learning\ex7 - K-Means Clustering and PCA\
 A = double(imread('bird_small.png'));
 
 % If imread does not work for you, you can try instead
