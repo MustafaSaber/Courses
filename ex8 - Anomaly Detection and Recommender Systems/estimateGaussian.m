@@ -24,9 +24,8 @@ sigma2 = zeros(n, 1);
 
 
 
-
-
-
+mu = mean(X)';
+sigma2 = var(X , 1); % 1 option since we need to normalize with the N not the N-1
 
 
 
