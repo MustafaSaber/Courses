@@ -1,0 +1,16 @@
+[0m[[0minfo[0m] [0mFast optimizing C:\Users\Mostafa\Desktop\Programming courses and Assigments\Functional Design in Scala\calculator\web-ui\target\scala-2.11\webui-fastopt.js[0m
+[0m[[0mdebug[0m] [0mLinker: Compute reachability: 168158 us[0m
+[0m[[0mdebug[0m] [0mLinker: Assemble LinkedClasses: 274512 us[0m
+[0m[[0mdebug[0m] [0mBasic Linking: 457563 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Batch mode: true[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Incremental part: 186235 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Optimizing 3831 methods.[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Optimizer part: 934680 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: 1138737 us[0m
+[0m[[0mdebug[0m] [0mRefiner: Compute reachability: 58918 us[0m
+[0m[[0mdebug[0m] [0mRefiner: Assemble LinkedClasses: 12944 us[0m
+[0m[[0mdebug[0m] [0mRefiner: 73853 us[0m
+[0m[[0mdebug[0m] [0mEmitter: Class tree cache stats: reused: 0 -- invalidated: 390[0m
+[0m[[0mdebug[0m] [0mEmitter: Method tree cache stats: resued: 0 -- invalidated: 2103[0m
+[0m[[0mdebug[0m] [0mEmitter (write output): 512777 us[0m
+[0m[[0mdebug[0m] [0mGlobal IR cache stats: reused: 0 -- invalidated: 29 -- trees read: 510[0m

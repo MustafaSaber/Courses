@@ -1,0 +1,6 @@
+[0m[[0minfo[0m] [0m[32mKMeansSuite:[0m[0m
+[0m[[0minfo[0m] [0m[32m- 'classify should work for empty 'points' and empty 'means'[0m[0m
+[0m[[0minfo[0m] [0m[32m- 'classify' should work for empty 'points' and 'means' == GenSeq(Point(1,1,1))[0m[0m
+[0m[[0minfo[0m] [0m[32m- 'classify' should work for 'points' == GenSeq((1, 1, 0), (1, -1, 0), (-1, 1, 0), (-1, -1, 0)) and 'means' == GenSeq((0, 0, 0))[0m[0m
+[0m[[0minfo[0m] [0m[32m- 'classify' should work for 'points' == GenSeq((1, 1, 0), (1, -1, 0), (-1, 1, 0), (-1, -1, 0)) and 'means' == GenSeq((1, 0, 0), (-1, 0, 0))[0m[0m
+[0m[[0minfo[0m] [0m[32m- 'classify with data parallelism should work for empty 'points' and empty 'means'[0m[0m

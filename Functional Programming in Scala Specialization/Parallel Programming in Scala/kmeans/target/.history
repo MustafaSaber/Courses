@@ -1,0 +1,4 @@
+runMain kmeans.KMeansRunner
+run-main kmeans.fun.ScalaShop
+test
+submit mostafa.saber3789@gmail.com 3H0IF086FnT7VqIM

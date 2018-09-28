@@ -1,0 +1,6 @@
+[0m[[0minfo[0m] [0m+ Heap.gen1: OK, passed 100 tests.[0m
+[0m[[0minfo[0m] [0m+ Heap. insert any two elements into an empty heap, finding the minimum of the resulting heap should get the smallest of the two elements back.: OK, passed 100 tests.[0m
+[0m[[0minfo[0m] [0m+ Heap. insert an element into an empty heap, then delete the minimum, the resulting heap should be empty.: OK, passed 100 tests.[0m
+[0m[[0minfo[0m] [0m+ Heap.sorted sequence of elements when continually finding and deleting minima.: OK, passed 100 tests.[0m
+[0m[[0minfo[0m] [0m+ Heap.Finding a minimum of the melding of any two heaps should return a minimum of one or the other.: OK, passed 100 tests.[0m
+[0m[[0minfo[0m] [0m+ Heap.Two heaps should be equal if recursivly removing min elements result in same elements until empty: OK, passed 100 tests.[0m
