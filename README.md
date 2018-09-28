@@ -1,2 +1,2 @@
-# Machine-Learning
-The introduction course of Machine learning on coursera assignments solutions.
+# My courses
+Documentation for all courses that I took online and its assignment solutions.
