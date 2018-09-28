@@ -1,2 +1,2 @@
-# My courses
-Documentation for all courses that I took online and its assignment solutions.
+# Machine Learning
+Assignment slotions for Andrew Ng machine learning course on coursera.
